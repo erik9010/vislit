@@ -27,8 +27,8 @@
     <!-- Header -->
     <header class="container">
       <hgroup>
-        <h1>test1SeiteA</h1>
-        <h2>A basic custom template for Pico using only CSS custom properties (variables).</h2>
+        <h1>Umfrage</h1>
+        <h2>Seite 1</h2>
       </hgroup>
       
     </header><!-- ./ Header -->
@@ -37,37 +37,54 @@
     <main class="container">
 
       <!-- Einleitung -->
+      <!-- p align="left | right | center | justify" -->
       <section id="Einleitung">
-        <h2>Einleitung</h2>
-        <p>Sed ultricies dolor non ante <b>vulputate</b> hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit pharetra egestas.</p>
+        <h2>Einleitung:</h2>
+        <p>Die folgende Visualisierung beschäftigt sich mit dem Welthunger-Index.</p>
+        <p align= "justify"><i>„Der Welthunger-Index (WHI) ist ein Instrument, mit dem jährlich die Hungersituation auf globaler, 
+          regionaler und nationaler Ebene umfassend gemessen und verfolgt wird. Der WHI soll zu einer stärkeren 
+          Wahrnehmung und einem besseren Verständnis der Hungersituation in der Welt führen.“</i></p>
+        <p align= "justify">Die Berechnung der WHI-Werte erfolgt über einen dreistufigen Prozess anhand der vier Indikatoren Unterernährung, 
+          Auszehrung bei Kindern, Wachstumsverzögerung bei Kindern und Kindersterblichkeit. Das Ergebnis stellen die WHI-Werte dar, 
+          welche auf einer Skala von 0 bis 100, wobei 0 (kein Hunger) der beste und 100 der schlechteste Wert ist, dargestellt werden.</p>
+        <p align= "justify">Die dafür notwendigen Daten werden über die folgenden Organisationen ermittelt:</p>
+        <p align= "justify">Der Ernährungs- und Landwirtschaftsorganisation der Vereinten Nationen (FAO), 
+          der Arbeitsgruppe der Vereinten Nationen für die Schätzung von Kindersterblichkeit (UN IGME), 
+          dem Kinderhilfswerk der Vereinten Nationen (UNICEF), der Weltgesundheitsorganisation (WHO), Demographic and Health Surveys (DHS) 
+          und den Multiple Indicator Cluster Surveys (MICS). Für nicht verfügbare Daten wurden Schätzungen anhand der aktuellsten vorliegenden Daten vorgenommen.</p>
+         <small>Quelle: <a href="https://www.globalhungerindex.org/de/about.html" target="_blank">Welthunger-Index</a></small>      
       </section><!-- ./ Einleitung -->
 
       <!-- Viz 3 -->
       <section id="Viz3">
-        <h2>Beispiel 1</h2>
-        <p>Sed ultricies dolor non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit pharetra egestas.</p>
+         <h2>WELTHUNGER-INDEX 2020</h2>
+        <p align= "justify">Im Folgenden sehen sie eine interaktive Karte. Sie können sich in dieser bewegen, zoomen, 
+             Länder auswählen und nach Ländern suchen beziehungsweise filtern. Sehen sie sich gern einmal um.</p>
+          <p align= "justify">Weiter unten gelangen Sie zum ersten Teil des Fragenbogens.</p>
 		
-		 <figure>
-          <img src="2020-welthunger-index-einlegeposter.png" alt="Minimal landscape">
-          <figcaption>Image from <a href="https://www.welthungerhilfe.de/aktuelles/publikation/detail/karte-welthunger-index-2020-nach-schweregrad/">welthungerhilfe.de</a></figcaption>
+	        <figure id="zoom-img">
+          <img src="img/welthunger.png" alt="Minimal landscape">
+	<figcaption>Image from <a href="https://www.welthungerhilfe.de/aktuelles/publikation/detail/karte-welthunger-index-2020-nach-schweregrad/">welthungerhilfe.de</a></figcaption>
         </figure>
 
       </section><!-- ./ Viz 3 -->
 
-         <!-- Fragebogen Teil 1 -->
-         <section id="Fragebogen1">
-          <h2>Fragebogen Teil 1</h2>
-          <p>Sed ultricies dolor non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit pharetra egestas.</p>
+         <!-- Fragebogen Teil 3 -->
+         <section id="Fragebogen3">
+          <h2>Erster Teil des Fragbogens:</h2>
+          
+           <p>Bitte folgen Sie den Anweisungen im Fragebogen.</p>
         
-          <iframe id="googleForm" src="https://docs.google.com/forms/d/e/1FAIpQLScz-aU_VR2BUu0nGcQ9SFgVrkeqaQiKl7qhyMIsjVhd6Loaig/viewform?embedded=true" width="100%" height="1046" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
-  
-
-          <div class="grid">
+           <!-- width="100%" height="4208" scrolling="no" -->
+          <iframe id= "iframe_survey" src="https://docs.google.com/forms/d/e/1FAIpQLSdessgtqnFloiUySVm6iae3IfFQ-F6I1jhw2kuw_eNg3vmt4g/viewform?embedded=true" width="100%" height="auto" scrolling="yes" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+         
+           <div class="grid">
             <div></div>
-          <a href="test1SeiteB.html" target="_self" role="button">Hier gehts zu Teil 2</a>
-          <div></div>
-        </div>
-        </section><!-- ./ Preview -->
+            <a href="test1SeiteB.html" target="_self" role="button">Hier gehts zu Teil 2</a>
+            <div></div>
+          </div>
+           
+        </section><!-- ./ Fragebogen 3-->
 
     </main><!-- ./ Main -->
 
@@ -75,6 +92,17 @@
     <footer class="container">
       <small>Built with <a href="https://picocss.com">Pico</a> • Projekt der <a href="https://www.htw-dresden.de/" target="_blank">HTW Dresden</a></small>
     </footer><!-- ./ Footer -->
+	  
+	  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+  
+    <!-- Script js zoom -->
+    <script>
+      $(document).ready(function(){
+        $('#zoom-img').zoom({url: 'img/welthunger.png'});
+        console.log($('#zoom-img'));
+      }); 
+    </script>
 
   </body>
 
