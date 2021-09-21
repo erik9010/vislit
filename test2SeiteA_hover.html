@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic template • Pico.css</title>
+    <meta name="description" content="A basic custom template for Pico using only CSS custom properties (variables). Built with Pico CSS.">
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico">
+    <link rel="canonical" href="https://picocss.com/examples/basic-template/">
+
+    <!-- Pico.css -->
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+
+    <!-- Custom template-->
+   <link rel="stylesheet" href="css/custom.css">
+
+   <style>
+    header.container {
+      padding-bottom: 0;
+    }
+   </style>
+  </head>
+
+  <body>
+
+    <!-- Main -->
+    <main class="container">
+
+      <!-- Einleitung -->
+      <!-- p align="left | right | center | justify" -->
+      <section id="Einleitung">
+        <p align= "justify">Der Ablauf der Untersuchung gliedert sich in zwei Abschnitte. In jedem Abschnitt wird ihnen eine Visualisierung angeboten.</p>
+        <p></p>
+        <p>Die erste Visualisierung beschäftigt sich mit dem Welthunger-Index.</p>
+        <p align= "justify"><i>„Der Welthunger-Index (WHI) ist ein Instrument, mit dem jährlich die Hungersituation auf globaler, 
+          regionaler und nationaler Ebene umfassend gemessen und verfolgt wird. Der WHI soll zu einer stärkeren 
+          Wahrnehmung und einem besseren Verständnis der Hungersituation in der Welt führen.“</i></p>
+        <p align= "justify">Die Berechnung des WHI-Index erfolgt über einen dreistufigen Prozess anhand der vier Indikatoren Unterernährung, 
+          Auszehrung bei Kindern, Wachstumsverzögerung bei Kindern und Kindersterblichkeit. Das Ergebnis stellen die WHI-Werte dar, 
+          welche auf einer Skala von 0 bis 100, wobei 0 (kein Hunger) der beste und 100 der schlechteste Wert ist, dargestellt werden.</p>
+        <p align= "justify">Die dafür notwendigen Daten werden über die folgenden Organisationen ermittelt:</p>
+        <p align= "justify">Der Ernährungs- und Landwirtschaftsorganisation der Vereinten Nationen (FAO), 
+          der Arbeitsgruppe der Vereinten Nationen für die Schätzung von Kindersterblichkeit (UN IGME), 
+          dem Kinderhilfswerk der Vereinten Nationen (UNICEF), der Weltgesundheitsorganisation (WHO), Demographic and Health Surveys (DHS) 
+          und den Multiple Indicator Cluster Surveys (MICS). Für nicht verfügbare Daten wurden Schätzungen anhand der aktuellsten vorliegenden Daten vorgenommen.</p>
+         <small>Quelle: <a href="https://www.globalhungerindex.org/de/about.html" target="_blank">Welthunger-Index</a></small>      
+      </section><!-- ./ Einleitung -->
+
+      <!-- Viz 3 -->
+      <section id="Viz3">
+         <h2>WELTHUNGER-INDEX 2020</h2>
+        <p align= "justify">Sie sehen eine Karte.
+		Wenn Sie mit der Maus über die Karte fahren, vergrößtert sich die Ansicht. Beschäftigen Sie sich mit dieser Darstellung so lange wie sie möchten.</p>
+        <p>Über den Weiter-Button unterhalb der Karte gelangen Sie zum Fragebogen.</p>
+	      
+	        <figure id="zoom-img">
+          <img src="img/welthunger.png" alt="Minimal landscape">
+        </figure>
+
+      </section><!-- ./ Viz 3 -->
+	    
+	     <div class="grid">
+            <div></div>
+            <a href="test2SeiteA1.html" target="_self" role="button">Weiter</a>
+            <div></div>
+          </div>
+
+    </main><!-- ./ Main -->
+
+    <!-- Footer -->
+    <footer class="container">
+      <small>Built with <a href="https://picocss.com">Pico</a> • Projekt der <a href="https://www.htw-dresden.de/" target="_blank">HTW Dresden</a></small>
+    </footer><!-- ./ Footer -->
+
+  </body>
+
+</html>
