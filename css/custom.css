@@ -320,3 +320,9 @@ a[role="button"] {
   height: 80vh;
   margin-bottom: 40px;
 }
+
+#Bild_hover {
+    width: 704px;
+    height: 576px;
+    transition: 3s ease-in-out;
+}
