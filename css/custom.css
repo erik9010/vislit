@@ -330,8 +330,6 @@ a[role="button"] {
   z-index: 999;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
   overflow: scroll;
 
   /* A bit of padding around image */
