@@ -321,54 +321,41 @@ a[role="button"] {
   margin-bottom: 40px;
 }
 
-/*************************************
- * Basic lightbox styles. Notice the
- * default 'display' is 'none'.
- */
-
 .lightbox {
-  /** Hide the lightbox */
+  /* Default to hidden */
   display: none;
+  overflow: scroll;
+  overflow-x:hidden;
+  overflow-y:scroll;
 
-  /** Apply basic lightbox styling */
+  /* Overlay entire screen */
   position: fixed;
-  z-index: 9999;
-  width: 100%;
-  height: auto;
-  padding:10px;
-  text-align: center;
+  z-index: 999;
   top: 0;
   left: 0;
-  background: black;
-  background: rgba(0,0,0,0.8);
+  right: 0;
+  bottom: 0;
+
+  /* A bit of padding around image */
+  padding: 1em;
+
+  /* Translucent background */
+  background: rgba(0, 0, 0, 0.8);
 }
 
-.lightbox img {
-  /** Pad the lightbox image */
-  max-width: 90%;
-  margin-top: 2%;
-  overflow-y:scroll;
-  height:100%;
-}
-
+/* Unhide the lightbox when it's the target */
 .lightbox:target {
-  /** Show lightbox when it is target */
   display: block;
-
-  /** Remove default browser outline style */
-  outline: none;
 }
 
-/*========== ADDED THIS ==========*/
-.lightbox {
-    width: 300px; /* set arbitrary dimensions */
-    height: 300px;
-    overflow: scroll; /* causes .lightbox to be scrollable if children overflow it */
-}
+.lightbox span {
+  /* Full width and height */
+  display: flex;
+  width: 100%;
+  height: 100%;
 
-.lightbox img {
-    max-width: none; /* max-width: 90%; <---- don't set this (otherwise image will never overflow parent)*/
-    margin-top: 2%;
-    overflow-y: visible; /* overflow-y: scroll; <---- don't set this (images can't contain anythying, so nothing can overflow from them*/
-    height: auto;  /* height: 100%; <---- don't set this (otherwise image will never overflow parent)*/
-}  
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
