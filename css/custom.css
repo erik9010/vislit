@@ -328,8 +328,8 @@ a[role="button"] {
 /**Position and style*/
  position: fixed;
   z-index: 999;
-  width: auto;
-  height: auto;
+  width: 150%;
+  height: 150%;
   overflow: scroll;
   text-align: center;
   top: 0;
