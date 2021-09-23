@@ -342,6 +342,7 @@ a[role="button"] {
 max-width: none;
 height: auto;
 margin-top: 2%;
+overflow-y: visible;  
 }
 
 /* Unhide the lightbox when it's the target */
