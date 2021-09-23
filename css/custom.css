@@ -325,27 +325,29 @@ a[role="button"] {
   /* Default to hidden */
   display: none;
 
-  /* Overlay entire screen */
-  position: fixed;
+/**Position and style*/
+ position: fixed;
   z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  text-align: center;
   top: 0;
   left: 0;
-  overflow: scroll;
-
-  /* A bit of padding around image */
-  padding: 1em;
-
-  /* Translucent background */
   background: rgba(0, 0, 0, 0.8);
 }
 
-/* Unhide the lightbox when it's the target */
-.lightbox:target {
-  display: block;
+.lightbox img{
+/**Pad the lightbox image*/
+max-width: none;
+height auto;
+margin-top: 2%;
+overflow-y: visible;
 }
 
-  /* Size and position background image */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+/* Unhide the lightbox when it's the target */
+/** Remove the default browser outline*/
+.lightbox:target {
+  display: block;
+  outline:none;
+ }
