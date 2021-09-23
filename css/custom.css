@@ -342,6 +342,7 @@ a[role="button"] {
 max-width: none;
 height: auto;
 margin-top: 2%;
+width: 120%;
 overflow-y: visible;  
 }
 
