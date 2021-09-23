@@ -332,6 +332,7 @@ a[role="button"] {
   left: 0;
   right: 0;
   bottom: 0;
+  overflow: scroll;
 
   /* A bit of padding around image */
   padding: 1em;
@@ -350,6 +351,7 @@ a[role="button"] {
   display: flex;
   width: 100%;
   height: 100%;
+  overflow-y: visible;
 
   /* Size and position background image */
   background-position: center;
