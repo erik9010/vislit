@@ -328,7 +328,7 @@ a[role="button"] {
   /** Apply basic lightbox styling */
   position: fixed;
   z-index: 9999;
-  width: auto;
+  width: 100%;
   height: auto;
   padding:10px;
   text-align: center;
