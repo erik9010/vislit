@@ -340,7 +340,7 @@ a[role="button"] {
 .lightbox img{
 /**Pad the lightbox image*/
 max-width: 100%;
-max-height: auto;
+max-height: 100%;
 margin-top: 2%;
 overflow-y: visible;
 overflow-x: visible
