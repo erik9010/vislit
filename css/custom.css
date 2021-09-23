@@ -346,13 +346,6 @@ a[role="button"] {
   display: block;
 }
 
-.lightbox span {
-  /* Full width and height */
-  display: flex;
-  width: 50%;
-  height: 50%;
-  overflow-y: visible;
-
   /* Size and position background image */
   background-position: center;
   background-repeat: no-repeat;
