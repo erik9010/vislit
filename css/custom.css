@@ -321,6 +321,45 @@ a[role="button"] {
   margin-bottom: 40px;
 }
 
+/*************************************
+ * Basic lightbox styles. Notice the
+ * default 'display' is 'none'.
+ */
+
+.lightbox {
+  /** Hide the lightbox */
+  display: none;
+
+  /** Apply basic lightbox styling */
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: auto;
+  padding:10px;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: black;
+  background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+  /** Pad the lightbox image */
+  max-width: 90%;
+  margin-top: 2%;
+  overflow-y:scroll;
+  height:100%;
+}
+
+.lightbox:target {
+  /** Show lightbox when it is target */
+  display: block;
+
+  /** Remove default browser outline style */
+  outline: none;
+}
+
+/*========== ADDED THIS ==========*/
 .lightbox {
     width: 300px; /* set arbitrary dimensions */
     height: 300px;
@@ -333,4 +372,3 @@ a[role="button"] {
     overflow-y: visible; /* overflow-y: scroll; <---- don't set this (images can't contain anythying, so nothing can overflow from them*/
     height: auto;  /* height: 100%; <---- don't set this (otherwise image will never overflow parent)*/
 }  
-
