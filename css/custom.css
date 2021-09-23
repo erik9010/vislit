@@ -339,7 +339,7 @@ a[role="button"] {
   0verflow: scroll;
 }
 
-.lightbox img {
+.lightbox_content {
   /** Pad the lightbox image */
   max-width: none;
   margin-top: 2%;
