@@ -66,21 +66,36 @@
       </section><!-- ./ Viz 1 -->
 	  
 	  
-	  <!-- Fragebogen Teil 2 -->
-         <section id="Fragebogen2">
-         <a href="#" onclick="document.getElementById('iframe_survey').style.display='';"><h3>Fragebogen anzeigen</h3></a>
-          <iframe id= "iframe_survey" src="https://docs.google.com/forms/d/e/1FAIpQLSdessgtqnFloiUySVm6iae3IfFQ-F6I1jhw2kuw_eNg3vmt4g/viewform?embedded=true" width="100%" height="auto" scrolling="yes" frameborder="0" marginheight="0" marginwidth="0" style="display: none">Wird geladen…</iframe>
-	 
-           <div class="grid">
-            <div></div>
-            <a href="test1SeiteB_hov_new.html" target="_self" role="button">Weiter</a>
-            <div></div>
-          </div>
-           
-        </section><!-- ./ Fragebogen 1 -->
+	   <!-- Fragebogen Teil 3 -->
+         <section id="Fragebogen3">
+         			
+					 <button onclick="myFunction()">Fragebogen öffnen</button>
+
+					<div id="myDIV" style="display: none">
+					<iframe id= "iframe_survey" src="https://docs.google.com/forms/d/e/1FAIpQLSdessgtqnFloiUySVm6iae3IfFQ-F6I1jhw2kuw_eNg3vmt4g/viewform?embedded=true" width="100%" height="auto" scrolling="yes" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+						<div class="grid">
+							<div></div>
+								<a href="test1SeiteB_hov.html" target="_self" role="button">Zurück</a>
+							<div></div>
+						</div>
+					</div> 
+
+	  </section><!-- ./ Fragebogen 3 -->
 
 
     </main><!-- ./ Main -->
+	  
+	<!-- Hide/Unhide -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>	  
 
   </body>
 
