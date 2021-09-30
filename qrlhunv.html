@@ -33,6 +33,16 @@
 
            <!-- width="100%" height="4208" scrolling="no" -->
            <iframe id= "iframe_survey" src="https://docs.google.com/forms/d/e/1FAIpQLSdfVJ7ft6LnVH8_9ufj2kJnqQfKgRfeA9QRHwS-ffVqOLCbZg/viewform?embedded=true" width="100%" height="auto" scrolling="yes" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>   
+        
+        <div class="grid">
+			<div></div>
+				<div>
+				<label for="cb1">Wenn sie den Fragebogen fertig ausgefüllt haben, dann klicken Sie bitte hier.</label>
+				<input type="checkbox" id="cb1" onclick="checkBoxes();">
+				</div>
+            <div></div>
+          </div>
+        
         <div class="grid">
             <div></div>
             <a href="muptewv.html" target="_self" role="button">Weiter</a>
@@ -42,7 +52,13 @@
         </section><!-- ./ Fragebogen1 -->
 
     </main><!-- ./ Main -->
+<script>
 
+function checkBoxes() {  
+   document.getElementById('lnk').style.display =  
+     ((document.getElementById('cb1').checked) ? 'inline' : 'none');  
+}
+</script>
   </body>
 
 </html>
