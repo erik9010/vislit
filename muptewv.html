@@ -38,14 +38,24 @@
         
       </section><!-- ./ Einleitung -->
 
-
+	<input type="checkbox" id="cb1" onclick="checkBoxes();">
+	    <label for="cb1">Bitte hier klicken</label>
            <div class="grid">
             <div></div>
-            <a href="mhuntng.html" target="_self" role="button">Weiter</a>
+            <a href="mhuntng.html" target="_self" role="button" id="lnk" style="display: none;">Weiter</a>
             <div></div>
           </div>
 
     </main><!-- ./ Main -->
+
+<!--Checkbox-->
+<script>
+
+function checkBoxes() {  
+   document.getElementById('lnk').style.display =  
+     ((document.getElementById('cb1').checked) ? 'inline' : 'none');  
+}
+</script>
 
   </body>
 
