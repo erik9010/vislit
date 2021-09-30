@@ -79,12 +79,23 @@
          	<button onclick="myFunction()">Fragebogen öffnen</button>
 			<div id="myDIV" style="display: none">
 				<iframe id= "iframe_survey" src="https://docs.google.com/forms/d/e/1FAIpQLSdessgtqnFloiUySVm6iae3IfFQ-F6I1jhw2kuw_eNg3vmt4g/viewform?embedded=true" width="100%" height="auto" scrolling="yes" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
-					<div class="grid">
-						<div></div>
-							<a href="rafilns.html" target="_self" role="button">Weiter</a>
-						<div></div>
-					</div>
-			</div> 
+					
+			<div class="grid">
+				<div></div>
+				<div>
+					<input type="checkbox" id="cb1" onclick="checkBoxes();">
+					<label for="cb1">Nachdem Sie den Fragebogen abgeschickt haben, klicken Sie bitte hier.</label>
+				</div>
+            			<div></div>
+          		</div>
+				
+				
+			<div class="grid">
+				<div></div>
+					<a href="rafilns.html" target="_self" role="button" id="lnk" style="display: none;">Weiter</a>
+				<div></div>
+			</div>
+			</div>
 
 	  </section><!-- ./ Fragebogen 2 -->
 
@@ -100,6 +111,14 @@ function myFunction() {
   } else {
     x.style.display = "none";
   }
+}
+</script>
+	  
+<script>
+
+function checkBoxes() {  
+   document.getElementById('lnk').style.display =  
+     ((document.getElementById('cb1').checked) ? 'inline' : 'none');  
 }
 </script>	  
 
