@@ -2,8 +2,7 @@
 
 Nutzungstest / A/B-Test:
 
-Beide Testvarainten setzen sich aus sechs einzelnen Pages zusammen.
-
+Die Testvarianten A und B setzen sich aus sechs einzelnen Pages zusammen.
 Testvariante A:
 
 1. start1 = edvzsip.html
