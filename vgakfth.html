@@ -1,65 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Basic template • Pico.css</title>
+        <meta name="description" content="A basic custom template for Pico using only CSS custom properties (variables). Built with Pico CSS." />
+        <link rel="shortcut icon" href="https://picocss.com/favicon.ico" />
+        <link rel="canonical" href="https://picocss.com/examples/basic-template/" />
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic template • Pico.css</title>
-    <meta name="description" content="A basic custom template for Pico using only CSS custom properties (variables). Built with Pico CSS.">
-    <link rel="shortcut icon" href="https://picocss.com/favicon.ico">
-    <link rel="canonical" href="https://picocss.com/examples/basic-template/">
+        <!-- Pico.css -->
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
 
-    <!-- Pico.css -->
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <!-- Custom template-->
+        <link rel="stylesheet" href="css/custom.css" />
 
-    <!-- Custom template-->
-   <link rel="stylesheet" href="css/custom.css">
+        <style>
+            header.container {
+                padding-bottom: 0;
+            }
+        </style>
+    </head>
 
-   <style>
-    header.container {
-      padding-bottom: 0;
-    }
-   </style>
-  </head>
+    <body>
+        <!-- Main -->
+        <main class="container">
+            <!-- Einleitung -->
+            <!-- p align="left | right | center | justify" -->
+            <section id="Einleitung">
+                <!-- width="100%" height="4208" scrolling="no" -->
+                <iframe
+                    id="iframe_survey"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSevic2QJi9UlHCnAiFWmQf2HLMldwSN3eKRZi-_eQkLwfiWJw/viewform?embedded=true"
+                    width="100%"
+                    height="auto"
+                    scrolling="yes"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                >
+                    Wird geladen…
+                </iframe>
 
-  <body>
+                <div class="grid">
+                    <div></div>
+                    <div>
+                        <label for="cb1">Nachdem Sie den Fragebogen abgeschickt haben, klicken Sie bitte hier.</label>
+                        <input type="checkbox" id="cb1" onclick="checkBoxes();" />
+                    </div>
+                    <div></div>
+                </div>
 
-    <!-- Main -->
-    <main class="container">
+                <div class="grid">
+                    <div></div>
+                    <a href="ylsgddd.html" target="_self" role="button" id="lnk" style="display: none;">Weiter</a>
+                    <div></div>
+                </div>
+            </section>
+            <!-- ./ Fragebogen 1 -->
+        </main>
+        <!-- ./ Main -->
 
-      <!-- Einleitung -->
-      <!-- p align="left | right | center | justify" -->
-      <section id="Einleitung">
-           <!-- width="100%" height="4208" scrolling="no" -->
-	<iframe id= "iframe_survey" src="https://docs.google.com/forms/d/e/1FAIpQLSevic2QJi9UlHCnAiFWmQf2HLMldwSN3eKRZi-_eQkLwfiWJw/viewform?embedded=true" width="100%" height="auto" scrolling="yes" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>   
-	  
-	      <div class="grid">
-			<div></div>
-				<div>
-				<label for="cb1">Nachdem Sie den Fragebogen abgeschickt haben, klicken Sie bitte hier.</label>
-				<input type="checkbox" id="cb1" onclick="checkBoxes();">
-				</div>
-            <div></div>
-          </div>
-	      
-	   <div class="grid">
-            <div></div>
-            <a href="ylsgddd.html" target="_self" role="button" id="lnk" style="display: none;">Weiter</a>
-            <div></div>
-          </div>
-           
-        </section><!-- ./ Fragebogen 1 -->
-
-    </main><!-- ./ Main -->
-	  
-<script>
-
-function checkBoxes() {  
-   document.getElementById('lnk').style.display =  
-     ((document.getElementById('cb1').checked) ? 'inline' : 'none');  
-}
-</script>
-
-  </body>
-
+        <script>
+            function checkBoxes() {
+                document.getElementById("lnk").style.display = document.getElementById("cb1").checked ? "inline" : "none";
+            }
+        </script>
+    </body>
 </html>
