@@ -1,111 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Basic template • Pico.css</title>
+        <meta name="description" content="A basic custom template for Pico using only CSS custom properties (variables). Built with Pico CSS." />
+        <link rel="shortcut icon" href="https://picocss.com/favicon.ico" />
+        <link rel="canonical" href="https://picocss.com/examples/basic-template/" />
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic template • Pico.css</title>
-    <meta name="description" content="A basic custom template for Pico using only CSS custom properties (variables). Built with Pico CSS.">
-    <link rel="shortcut icon" href="https://picocss.com/favicon.ico">
-    <link rel="canonical" href="https://picocss.com/examples/basic-template/">
+        <!-- Pico.css -->
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
 
-    <!-- Pico.css -->
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+        <!-- Custom template-->
+        <link rel="stylesheet" href="css/custom.css" />
 
-    <!-- Custom template-->
-   <link rel="stylesheet" href="css/custom.css">
+        <style>
+            header.container {
+                padding-bottom: 0;
+            }
+        </style>
+    </head>
 
-   <style>
-    header.container {
-      padding-bottom: 0;
-    }
-   </style>
-  </head>
+    <body>
+        <!-- Main -->
+        <main class="container">
+            <!-- Einleitung -->
+            <section id="Forbes">
+                <h2>Forbes World's Billionaires List 2021</h2>
+                <p>Die zweite Visualisierung beschäftigt sich mit der Forbes World's Billionaires List 2021.</p>
+                <p align="justify">
+                    Die Zahl der Menschen mit einem Vermögen ab einer Milliarde ist auf eine noch nie dagewesene Zahl von 2755 gestiegen. Seit 35 Jahren ermittelt das Forbes Magazine die Liste der reichsten Menschen der Welt. Der
+                    Nettovermögenswert wurde anhand der Aktienkurse und Wechselkurse zum 05. März 2021 ermittelt.<br />
+                    <font color="#D0D0D0"> Quelle: https://www.forbes.com/billionaires/ (10.09.2021) </font>
+                </p>
+            </section>
+            <!-- ./ Einleitung -->
 
-  <body>
+            <!-- Viz 4 -->
+            <section id="Viz4">
+                <h3>Ihre Aufgabe</h3>
+                <p align="justify">
+                    Die folgende Visualisierung zeigt die 100 reichsten Personen der Forbes World's Billionaires List 2021. Die Grafik wird von innen nach außen gelesen. Wenn Sie die Untersuchung an einem Computer vornehmen, dann haben Sie
+                    die Möglichkeit, sich die einzelnen Knoten und Verbindungen genauer anzusehen, indem Sie einen Knoten mit einem Mausklick auswählen. Der Knoten wird anschließend in den Fokus gesetzt. Auf der rechten Seite wird ein
+                    Button sichtbar, über welchen Sie in die Ausgangsform der Visualisierung zurückgelangen. Wenn sie mit der Maus über einen Knoten im inneren Bereich oder einen Balken im äußeren Bereich fahren, dann werden Ihnen
+                    zusätzliche Informationen angezeigt. Im oberen Teil der Grafik befindet sich ein Filter, mit welchem Sie nach einer beliebigen Branche filtern können. Wenn Sie den Filter auf All stellen, dann werden Ihnen wieder alle
+                    Branchen angezeigt. Für die Bedienung über Smartphone oder Tablet stehen die genannten Funktionalitäten ebenfalls zur Verfügung.
+                </p>
 
-    <!-- Main -->
-    <main class="container">
+                <p align="justify">
+                    Beschäftigen Sie sich mit dieser Darstellung so lange, wie sie möchten. Unterhalb der Grafik gelangen Sie zum Fragebogen.
+                </p>
 
-     <!-- Einleitung -->
-      <section id="Forbes">
-	  <h2>Forbes World's Billionaires List 2021</h2>
-        <p>Die zweite Visualisierung beschäftigt sich mit der Forbes World's Billionaires List 2021.</p>
-        <p align= "justify">Die Zahl der Menschen mit einem Vermögen ab einer Milliarde ist auf eine noch nie dagewesene Zahl von 2755 gestiegen.
-        Seit 35 Jahren ermittelt das Forbes Magazine die Liste der reichsten Menschen der Welt. 
-		Der Nettovermögenswert wurde anhand der Aktienkurse und Wechselkurse zum 05. März 2021 ermittelt.<br />
-	      <font color="#D0D0D0"> Quelle: https://www.forbes.com/billionaires/ (10.09.2021) </font></p>
-          
-      </section><!-- ./ Einleitung -->
+                <div class="flourish-embed flourish-hierarchy" data-src="visualisation/7223447"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+            </section>
+            <!-- ./ Viz 4n -->
 
-      <!-- Viz 4 -->
-      <section id="Viz4">
-       <h3>Ihre Aufgabe</h3>
-          <p align= "justify">Die folgende Visualisierung zeigt die 100 reichsten Personen der Forbes World's Billionaires List 2021.
-		 Die Grafik wird von innen nach außen gelesen.
-		  Wenn Sie die Untersuchung an einem Computer vornehmen, dann haben Sie die Möglichkeit, 
-		  sich die einzelnen Knoten und Verbindungen genauer anzusehen, indem Sie einen Knoten mit 
-		  einem Mausklick auswählen. Der Knoten wird anschließend in den Fokus gesetzt.
-		 Auf der rechten Seite wird ein Button sichtbar, über welchen Sie in die Ausgangsform der Visualisierung zurückgelangen. 
-		       Wenn sie mit der Maus über einen Knoten im inneren Bereich oder einen Balken im äußeren Bereich fahren, 
-		       dann werden Ihnen zusätzliche Informationen angezeigt. Im oberen Teil der Grafik befindet sich ein Filter,
-		       mit welchem Sie nach einer beliebigen Branche filtern können. Wenn Sie den Filter auf All stellen, dann werden Ihnen wieder alle Branchen angezeigt.
-		  Für die Bedienung über Smartphone oder Tablet stehen die genannten Funktionalitäten ebenfalls zur Verfügung.</p>
-		      
-			  <p align= "justify">
-				Beschäftigen Sie sich mit dieser Darstellung so lange, wie sie möchten. 
-				Unterhalb der Grafik gelangen Sie zum Fragebogen.</p>
-        
-      	<div class="flourish-embed flourish-hierarchy" data-src="visualisation/7223447"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-	    </section><!-- ./ Viz 4n -->
-      
-      <!-- Fragebogen Teil 3 -->
-         <section id="Fragebogen3">
-         	<button onclick="myFunction()">Fragebogen öffnen</button>
-			<div id="myDIV" style="display: none">
-				<iframe id="iframe_survey" src="https://docs.google.com/forms/d/e/1FAIpQLScOImzd9sayT4diHYF4NTzT2Aew3GZa6VSSPCiNTBRvFXlZAA/viewform?embedded=true" width="100%" height="auto" scrolling="yes" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
-					
-				<div class="grid">
-					<div></div>
-					<div>
-					<label for="cb1">Nachdem Sie den Fragebogen abgeschickt haben, klicken Sie bitte hier.</label>
-					<input type="checkbox" id="cb1" onclick="checkBoxes();">
-					</div>
-            				<div></div>
-          			</div>
-				
-				<div class="grid">
-						<div></div>
-							<a href="uenzdof.html" target="_self" role="button" id="lnk" style="display: none;">Weiter</a>
-						<div></div>
-					</div>
-			</div> 
+            <!-- Fragebogen Teil 3 -->
+            <section id="Fragebogen3">
+                <button onclick="myFunction()">Fragebogen öffnen</button>
+                <div id="myDIV" style="display: none;">
+                    <iframe
+                        id="iframe_survey"
+                        src="https://docs.google.com/forms/d/e/1FAIpQLScOImzd9sayT4diHYF4NTzT2Aew3GZa6VSSPCiNTBRvFXlZAA/viewform?embedded=true"
+                        width="100%"
+                        height="auto"
+                        scrolling="yes"
+                        frameborder="0"
+                        marginheight="0"
+                        marginwidth="0"
+                    >
+                        Wird geladen…
+                    </iframe>
 
-	  </section><!-- ./ Fragebogen 3 -->
+                    <div class="grid">
+                        <div></div>
+                        <div>
+                            <label for="cb1">Nachdem Sie den Fragebogen abgeschickt haben, klicken Sie bitte hier.</label>
+                            <input type="checkbox" id="cb1" onclick="checkBoxes();" />
+                        </div>
+                        <div></div>
+                    </div>
 
-    </main><!-- ./ Main -->
-	  
-<!-- Hide/Unhide -->
-<script>
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
-	  
-<script>
+                    <div class="grid">
+                        <div></div>
+                        <a href="uenzdof.html" target="_self" role="button" id="lnk" style="display: none;">Weiter</a>
+                        <div></div>
+                    </div>
+                </div>
+            </section>
+            <!-- ./ Fragebogen 3 -->
+        </main>
+        <!-- ./ Main -->
 
-function checkBoxes() {  
-   document.getElementById('lnk').style.display =  
-     ((document.getElementById('cb1').checked) ? 'inline' : 'none');  
-}
-</script>
+        <!-- Hide/Unhide -->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myDIV");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
 
-
-  </body>
-
+        <script>
+            function checkBoxes() {
+                document.getElementById("lnk").style.display = document.getElementById("cb1").checked ? "inline" : "none";
+            }
+        </script>
+    </body>
 </html>
