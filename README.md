@@ -5,7 +5,7 @@ Nutzungstest / A/B-Test:
 Die Testvarianten A und B setzen sich aus sechs einzelnen Pages zusammen.
 Testvariante A:
 
-1. start1 = edvzsip.html
+1. start1 = edvzsip.html / edvzsip_old.html
 2. einleitung1 = qrlhunv.html
 3. ablauf1 = muptewv.html
 4. test1SeiteA_new = mhuntng.html
@@ -14,7 +14,7 @@ Testvariante A:
 
 Tesvarainte B: 
 
-1. start2 = edfbcqg.html
+1. start2 = edfbcqg.html / edfbcqg_old.html
 2. einleitung2 = vgakfth.html
 3. ablauf2 = ylsgddd.html
 4. test2SeiteA_hov_new = ktmjdfi.html
