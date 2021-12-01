@@ -13,7 +13,7 @@ Testvariante A:
 5. test1SeiteB_hov_new = rafilns.html
 6. abschluss1 = meurejb.html
 
-#Tesvarainte B: 
+Tesvarainte B: 
 
 1. start2 = edfbcqg.html
 2. einleitung2 = vgakfth.html
